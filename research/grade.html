@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GRADE: Evaluating the pedagogical quality of AI tutor responses.">
+  <title>GRADE · Research · Jeromy Chang</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../index.html">Jeromy Chang</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="index.html" aria-current="page">Research</a>
+      <a href="../assets/documents/Jeromy_Chang_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div></header>
+  <main id="main"><div class="container">
+    <div class="page-head project-head">
+      <p class="breadcrumb"><a href="index.html">← Back to Research</a></p>
+      <p class="status">Completed research project</p>
+      <h1>GRADE: Generalizable Reasoning-Aware Dialogue Evaluation for AI Tutors</h1>
+      <p class="project-subtitle">Evaluating what makes AI-generated teaching feedback useful—not just correct.</p>
+      <div class="paper-meta"><span class="pill">LLM Evaluation</span><span class="pill">Educational NLP</span><span class="pill">Reasoning &amp; Fine-Tuning</span></div>
+    </div>
+    <article class="article">
+      <section>
+        <h2>Overview &amp; Motivation</h2>
+        <p>AI tutors need to do more than give mathematically correct answers. A helpful response should recognize when a student makes a mistake, identify where it happened, guide the student toward a correction, and offer a meaningful next step. GRADE investigates how well open-source language models can evaluate these aspects of pedagogical quality in student–tutor dialogue.</p>
+      </section>
+      <section>
+        <h2>Research Questions</h2>
+        <ol>
+          <li>How do model scale and fine-tuning affect assessments of tutor feedback?</li>
+          <li>Is chain-of-thought reasoning more useful during evaluation or when generating training data?</li>
+          <li>Can one multitask model assess all four pedagogical dimensions as effectively as separate models?</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Methodology</h2>
+        <p>We evaluate five open-source language models in 120 experimental configurations. The experiments compare zero-shot inference with LoRA fine-tuning, synthetic data generation with and without self-verification, reasoning-enabled settings, and single-task versus multitask prediction.</p>
+        <p>Each tutor response is assessed on <strong>mistake identification, mistake location, providing guidance,</strong> and <strong>actionability</strong>. We use strict macro-F1 as the main performance measure, and also examine resource usage and carbon emissions.</p>
+      </section>
+      <section>
+        <h2>Key Findings</h2>
+        <ul class="findings-list">
+          <li><strong>Model and task choices matter.</strong> The strongest single-task configuration differs from the strongest multitask configuration.</li>
+          <li><strong>Augmentation is not universally helpful.</strong> It improves some weaker or constrained models but produces smaller gains for models already performing well.</li>
+          <li><strong>Reasoning has different effects at different stages.</strong> In this setting, it proved more useful for generating additional data than for direct classification.</li>
+          <li><strong>Verification introduces trade-offs.</strong> Extra self-verification substantially increases cost without consistently improving performance.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>My Contributions</h2>
+        <p>In this collaborative NLP term research project, I worked on extending the evaluation setup to all four pedagogical dimensions, comparing open-source model configurations, and analyzing how reasoning, fine-tuning, and augmentation affected performance.</p>
+      </section>
+      <!-- Add publicly approved paper/code links here when anonymity requirements allow. -->
+    </article>
+  </div></main>
+  <footer class="footer"><div class="container footer-inner">
+    <span>© 2026 Jeromy Chang</span><span><a href="https://github.com/JeromyChang" rel="me">GitHub</a></span>
+  </div></footer>
+</body></html>

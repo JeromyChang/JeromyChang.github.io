@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research projects by Jeromy Chang on AI reliability and language model evaluation.">
+  <meta name="theme-color" content="#fafbf9">
+  <title>Research · Jeromy Chang</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../index.html">Jeromy Chang</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="index.html" aria-current="page">Research</a>
+      <a href="../assets/documents/Jeromy_Chang_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div></header>
+  <main class="research-index" id="main"><div class="container">
+    <div class="page-head">
+      <h1>Research</h1>
+      <p>My work focuses on understanding how AI systems behave, how we can evaluate their reliability, and what their failures reveal. These projects explore those questions in different settings.</p>
+    </div>
+    <section class="section" aria-label="Research projects">
+      <div class="projects">
+        <article class="project">
+          <div class="project-visual" aria-hidden="true"><span>NLP</span></div>
+          <div>
+            <p class="status">Ongoing research</p>
+            <h3><a href="multilingual-deception.html">Multilingual Deception Detection</a></h3>
+            <p>Many evaluations of AI-generated text detection focus on a single language or model. This project takes a broader view, comparing classical machine learning detectors and LLM-based judgments across languages and generators. By studying both familiar and unseen conditions, I aim to understand how well these methods generalize and which evaluation choices make their reported performance more—or less—trustworthy.</p>
+            <p class="tags">Multilingual NLP · LLM Evaluation · Generalization</p>
+            <a class="text-link" href="multilingual-deception.html">Read project details →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-visual" aria-hidden="true"><span>GRADE</span></div>
+          <div>
+            <p class="status">Completed research project</p>
+            <h3><a href="grade.html">GRADE: Generalizable Reasoning-Aware Dialogue Evaluation for AI Tutors</a></h3>
+            <p>An AI tutor can produce a correct answer without providing useful teaching. GRADE examines how open-source language models evaluate tutoring responses across four dimensions: mistake identification, mistake location, guidance, and actionability. We compare five models and 120 experimental configurations to study the trade-offs among model scale, LoRA fine-tuning, reasoning, synthetic augmentation, multitask learning, and computational cost.</p>
+            <p class="tags">LLM Evaluation · Educational NLP · Efficient Fine-Tuning</p>
+            <a class="text-link" href="grade.html">Read project details →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div></main>
+  <footer class="footer"><div class="container footer-inner">
+    <span>© 2026 Jeromy Chang</span>
+    <span><a href="https://github.com/JeromyChang" rel="me">GitHub</a></span>
+  </div></footer>
+</body>
+</html>
