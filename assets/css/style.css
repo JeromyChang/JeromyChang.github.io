@@ -230,3 +230,15 @@ h3{font-size:1.27rem;margin:0 0 10px}
         border-radius: 14px;
     }
 }
+
+.bio a {
+    color: #176F6B;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.bio a:hover {
+    color: #104E4B;
+}
